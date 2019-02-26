@@ -17,5 +17,23 @@ public class ComplexNumber {
         return imaginary;
     }
 
-    
+    public void add(double real, double imaginary) {
+        this.real += real;
+        this.imaginary += imaginary;
+    }
+
+    public void add(ComplexNumber cn) {
+        this.real += cn.getReal();
+        this.imaginary += cn.getImaginary();
+    }
+
+    public void subtract(double real, double imaginary) {
+        this.real -= real;
+        this.imaginary -= imaginary;
+    }
+
+    public void subtract(ComplexNumber cn) {
+        this.real -= cn.getReal();
+        this.imaginary -= cn.getImaginary();
+    }
 }
